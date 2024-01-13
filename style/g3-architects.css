@@ -8,14 +8,22 @@
 }
 
 .btn-primary{
-
+    border-radius: 8px;
+    background: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    border: 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
 }
+
 
 /* header style */
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 45px 240px;
+    padding: 50px 240px;
 }
 
 nav {
@@ -25,22 +33,18 @@ nav {
 
 }
 .nav-title{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    color: 131313;
-}
+    color: #131313;}
 
-nav > ul {
 
+nav>ul {
     display: flex;
-
 }
 
 nav li {
     list-style: none;
     margin-right: 30px;
-
-
     font-family: "Work Sans";
     font-size: 1rem;
     font-weight: 500;
@@ -51,19 +55,46 @@ nav li a {
     text-decoration: none;
 }
 
-/* bnner style */
+/* banner style */
 .banner-content{
-    width: 862px;
+    max-width: 862px;
     text-align: center;
     margin: 0 auto;
 }
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
-    color: 131313;
+    color: #131313;
 }
 
 .banner-description{
     color: #727272;
 
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive mediya query */
+/* mobile device */
+
+@media screen and (max-width: 576px){
+    header{ padding: 20px;}
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        margin-right: 15px;
+    }
+    
+}
+
+/* tablat or medium device */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{ padding: 50px;}
+    nav{
+        flex-direction: column;
+    }
+    
 }
